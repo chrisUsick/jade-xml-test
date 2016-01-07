@@ -1,0 +1,13 @@
+mixin custom_match_points
+  custom-match-points(controller-version="4342")
+    block
+
+mixin custom_match_point(name, route)
+  custom-match-point
+    name= name
+    entry-point= route
+    block
+  
+mixin match_rule(operator)
+  match-rule
+    operator= operator
