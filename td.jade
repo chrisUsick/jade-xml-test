@@ -1,5 +1,7 @@
 include mixins.jade
 
 +custom_match_points
-  +custom_match_point("/brochures (GET)", "brochures")
+  +custom_match_point("/brochures (GET)", "getBrochuresData")
+    +match_rule("equals")
+  +custom_match_point("/brochures/{id} (GET), "getBrochureData")\
     +match_rule("equals")
